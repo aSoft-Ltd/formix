@@ -7,7 +7,7 @@ plugins {
     id("tz.co.asoft.library")
 }
 
-description = "The models of the formix library"
+description = "A code builder for generating formix forms"
 
 kotlin {
     if (Targeting.JVM) jvm { library() }
@@ -22,8 +22,14 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-                api(libs.kollections.interoperable)
-                api(kotlinx.serialization.core)
+                api(projects.formixModels)
+            }
+        }
+
+        val commonTest by getting {
+            dependencies {
+                implementation(libs.kommander.core)
+                implementation(kotlinx.serialization.json)
             }
         }
     }

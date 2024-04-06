@@ -6,6 +6,6 @@ interface Document {
     val uid: String
     val name: String
     val pages: List<Page>
-    val fields: List<DocumentField>
+    val fields: List<Field>
     val deleted: Boolean
 }

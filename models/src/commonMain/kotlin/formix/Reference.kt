@@ -1,8 +1,11 @@
 package formix
 
-interface Reference {
-    val uid: String
-    val field: String
-    val readonly: Boolean
-    val deleted: Boolean
-}
+import kotlinx.serialization.Serializable
+
+@Serializable
+data class Reference(
+    val uid: String,
+    val field: String,
+    val readonly: Boolean,
+    val deleted: Boolean,
+)
