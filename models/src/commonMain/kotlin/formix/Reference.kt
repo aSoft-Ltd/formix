@@ -6,6 +6,7 @@ import kotlinx.serialization.Serializable
 data class Reference(
     val uid: String,
     val field: String,
-    val readonly: Boolean,
-    val deleted: Boolean,
+    val option: String? = null,
+    val readonly: Boolean = false,
+    val deleted: Boolean = false,
 )

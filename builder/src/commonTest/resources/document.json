@@ -1,0 +1,68 @@
+{
+  "uid": "document",
+  "name": "Document",
+  "views": [
+    {
+      "uid": "common-view",
+      "label": "Common View",
+      "target": "common",
+      "pages": [
+        {
+          "uid": "current",
+          "name": "Page X",
+          "background": null,
+          "references": [
+            {
+              "uid": "field-1-first-name-current",
+              "field": "first-name"
+            },
+            {
+              "uid": "field-2-last-name-current",
+              "field": "last-name"
+            }
+          ]
+        },
+        {
+          "uid": "page-2",
+          "name": "Page 2",
+          "background": null,
+          "references": [
+            {
+              "uid": "field-3-email-page-2",
+              "field": "email"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "fields": [
+    {
+      "type": "formix.TextField",
+      "uid": "field-1-first-name",
+      "name": "first-name",
+      "label": "First Name",
+      "readonly": false,
+      "deleted": false,
+      "value": "John"
+    },
+    {
+      "type": "formix.TextField",
+      "uid": "field-2-last-name",
+      "name": "last-name",
+      "label": "Last Name",
+      "readonly": false,
+      "deleted": false,
+      "value": "Doe"
+    },
+    {
+      "type": "formix.TextField",
+      "uid": "field-3-email",
+      "name": "email",
+      "label": "Email",
+      "readonly": false,
+      "deleted": false,
+      "value": null
+    }
+  ]
+}

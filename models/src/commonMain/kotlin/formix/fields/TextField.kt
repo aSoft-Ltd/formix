@@ -2,7 +2,6 @@
 
 package formix
 
-import formix.Field
 import kotlinx.serialization.Serializable
 
 @Serializable
@@ -12,5 +11,5 @@ data class TextField(
     override var label: String,
     override var readonly: Boolean,
     override var deleted: Boolean,
-    var value: String
+    var value: String?
 ) : Field

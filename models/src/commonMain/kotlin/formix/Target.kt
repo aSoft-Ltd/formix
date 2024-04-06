@@ -1,5 +1,5 @@
 package formix
 
 enum class Target {
-    desktop, mobile
+    common, desktop, mobile
 }
