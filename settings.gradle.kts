@@ -13,6 +13,10 @@ fun includeSubs(base: String, path: String = base, vararg subs: String) {
     }
 }
 
+listOf("kommander", "kotlinx-interoperable","kollections").forEach {
+    includeBuild("../$it")
+}
+
 rootProject.name = "formix"
 
 includeSubs("formix", ".", "models")
