@@ -1,13 +1,9 @@
-import formix.Document
-import formix.Target
-import kotlin.test.Test
 import formix.document
-import kollections.find
 import kollections.first
 import kollections.get
-import kommander.expect
 import kollections.size
-import kotlinx.serialization.json.Json
+import kommander.expect
+import kotlin.test.Test
 
 class DocumentBuilderTest {
     @Test

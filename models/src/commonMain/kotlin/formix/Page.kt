@@ -7,8 +7,8 @@ import kotlinx.serialization.Serializable
 data class Page(
     val uid: String,
     val name: String,
-    val background: String?,
     val references: MutableList<Reference>,
+    val background: String? = null,
     val readonly: Boolean = false,
     val deleted: Boolean = false,
 )
